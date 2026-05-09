@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catering Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="menu-page">
+      <header class="hero">
+        <p class="eyebrow">Freshly prepared for your events</p>
+        <h1>My Catering Favorites</h1>
+        <p class="subtitle">A simple menu of signature dishes available for parties, office lunches, and celebrations.</p>
+      </header>
+
+      <section class="menu-grid">
+        {% for item in items %}
+        <article class="menu-card">
+          <h2>{{ item.name }}</h2>
+          <p>{{ item.description }}</p>
+          <span class="price">{{ item.price }}</span>
+        </article>
+        {% endfor %}
+      </section>
+    </main>
+  </body>
+</html>
