@@ -1,63 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velvet Table Catering</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/static/styles.css" />
-  </head>
-  <body>
-    <main class="landing-page">
-      <section class="hero">
-        <nav class="top-nav">
-          <div class="brand">Velvet Table</div>
-          <a href="#menu" class="btn btn-ghost">Explore Menu</a>
-        </nav>
-
-        <div class="hero-content">
-          <p class="eyebrow">Luxury Catering Studio</p>
-          <h1>Memorable Dining Experiences For Unforgettable Events</h1>
-          <p class="subtitle">
-            Premium catering for office lunches, celebrations, and private events. Rotating chef specials,
-            handcrafted breakfast options, and bold flavors made fresh.
-          </p>
-          <div class="hero-actions">
-            <a href="#menu" class="btn btn-primary">View Signature Collection</a>
-            <a href="#details" class="btn btn-soft">See Menu Details</a>
-          </div>
-        </div>
-      </section>
-
-      
-
-      <section id="menu" class="menu-section">
-        <div class="section-head">
-          <p class="eyebrow">Signature Collection</p>
-          <h2>This Month's Featured Catering Menu</h2>
-        </div>
-
-        <section class="menu-grid">
-          <article class="menu-card"><div class="menu-meta">Chef's Special</div><h3>Brisket Fried Rice</h3><p>Fried rice with brisket served on top.</p><span class="price">$15</span></article>
-          <article class="menu-card"><div class="menu-meta">Chef's Special</div><h3>QuesaBirria</h3><p>Large birria quesadilla with Oaxaca cheese, onions, cilantro, consomé, and Mexican street corn.</p><span class="price">$15</span></article>
-          <article class="menu-card"><div class="menu-meta">Chef's Special</div><h3>Smoked Chicken Cordon Bleu</h3><p>Bacon-wrapped chicken breast stuffed with cheese and ham, served with green spaghetti.</p><span class="price">$15</span></article>
-          <article class="menu-card"><div class="menu-meta">Chef's Special</div><h3>Honey Chipotle Chicken</h3><p>BBQ chicken with honey chipotle glaze, corn bread, and apple-fennel slaw.</p><span class="price">$12</span></article>
-        </section>
-      </section>
-
-      <section id="details" class="menu-section">
-        <div class="section-head"><p class="eyebrow">More Options</p><h2>Breakfast, Desserts & Add-ons</h2></div>
-        <section class="menu-grid">
-          <article class="menu-card"><div class="menu-meta">Breakfast Menu</div><h3>Morning Tacos</h3><p>Potato, egg, and cheese taco.</p><span class="price">$2</span><p>Brisket, egg, and cheese taco.</p><span class="price">$4</span></article>
-          <article class="menu-card"><div class="menu-meta">Dessert Menu</div><h3>Sweet Finish</h3><p>Mini Cheesecake · Big Cookie</p><span class="price">$5 each</span><p>Whole Cheesecake · Regular Cookie</p><span class="price">$18 · $1</span></article>
-          <article class="menu-card"><div class="menu-meta">Drinks & Salsa</div><h3>Beverages & Sides</h3><p>Diet or regular Coke.</p><span class="price">$1</span><p>Red or Green Salsa (1 quart).</p><span class="price">$10</span></article>
-        </section>
-      </section>
-    </main>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Velvet Table Catering</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" /><link rel="stylesheet" href="/static/styles.css" /></head><body><input type="checkbox" id="menu-toggle" class="menu-toggle" />
+<header class="site-header"><div class="brand">Velvet Table Catering</div><label for="menu-toggle" class="hamburger">☰</label></header>
+<nav class="side-menu"><label for="menu-toggle" class="close-menu">✕</label><a href="#home" class="active">Home</a><a href="#our-story">Our Story</a><a href="#menu">Menu</a><a href="#catering">Catering</a><a href="#contact">Contact Us</a><a href="#contact" class="order-btn">Order Now</a></nav>
+<main id="home"><section class="hero-panel" id="catering"><div class="hero-overlay"><p>Velvet Table Catering</p><h1>Fresh Catering for Every Occasion</h1><a href="#menu" class="cta">View Catering Menu</a></div></section>
+<section id="menu" class="content-wrap"><h2>Featured Catering Menu</h2><div class="cards"><article class="card"><h3>Brisket Fried Rice</h3><p>Fried rice with brisket served on top.</p><strong>$15</strong></article><article class="card"><h3>QuesaBirria</h3><p>House-made birria quesadilla, Oaxaca cheese, onions, cilantro, consomé, and street corn.</p><strong>$15</strong></article><article class="card"><h3>Smoked Chicken Cordon Bleu</h3><p>Bacon-wrapped stuffed chicken breast with green spaghetti.</p><strong>$15</strong></article><article class="card"><h3>Honey Chipotle Chicken</h3><p>BBQ chicken with honey chipotle glaze, corn bread, and apple-fennel slaw.</p><strong>$12</strong></article></div></section>
+<section class="hero-panel second" id="our-story"><div class="hero-overlay"><p>Crafted Menus</p><h2>Breakfast, Desserts & Drinks</h2><div class="stack-btns"><a href="#details" class="cta">Food Menu</a><a href="#details" class="cta light">Drink Menu</a></div></div></section>
+<section id="details" class="content-wrap"><h2>Menu Details</h2><div class="cards three"><article class="card"><h3>Breakfast Menu</h3><p>Potato, Egg, Cheese Taco — $2<br/>Brisket, Egg, Cheese Taco — $4</p></article><article class="card"><h3>Desserts</h3><p>Mini Cheesecake — $5<br/>Whole Cheesecake — $18<br/>Big Cookie — $5<br/>Regular Cookie — $1</p></article><article class="card"><h3>Drinks & Salsa</h3><p>Diet or Regular Coke — $1<br/>Red or Green Salsa (1 quart) — $10</p></article></div></section></main><footer id="contact">velvettablecatering.com</footer></body></html>
