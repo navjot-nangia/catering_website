@@ -3,31 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catering Menu</title>
+    <title>Velvet Table Catering</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/static/styles.css" />
   </head>
   <body>
-    <main class="menu-page">
-      <header class="hero">
-        <p class="eyebrow">Freshly prepared for your events</p>
-        <h1>My Catering Favorites</h1>
-        <p class="subtitle">A simple menu of signature dishes available for parties, office lunches, and celebrations.</p>
-      </header>
+    <main class="landing-page">
+      <section class="hero">
+        <nav class="top-nav">
+          <div class="brand">Velvet Table</div>
+          <a href="#menu" class="btn btn-ghost">Explore Menu</a>
+        </nav>
 
-      <section class="menu-grid">
-        {% for item in items %}
-        <article class="menu-card">
-          <h2>{{ item.name }}</h2>
-          <p>{{ item.description }}</p>
-          <span class="price">{{ item.price }}</span>
-        </article>
-        {% endfor %}
+        <div class="hero-content">
+          <p class="eyebrow">Luxury Catering Studio</p>
+          <h1>Memorable Dining Experiences For Unforgettable Events</h1>
+          <p class="subtitle">
+            Boutique catering for weddings, executive gatherings, and private celebrations. Curated menus,
+            flawless presentation, and white-glove service from first tasting to final toast.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">View Signature Collection</a>
+            <a href="#gallery" class="btn btn-soft">See Event Gallery</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-block">
+        <div class="section-head">
+          <p class="eyebrow">Visual Flavor</p>
+          <h2>Designed Like A Five-Star Venue</h2>
+        </div>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Elegant event dining setup" />
+          <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80" alt="Chef plating gourmet food" />
+          <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80" alt="Catering table with floral decor" />
+        </div>
+      </section>
+
+      <section id="menu" class="menu-section">
+        <div class="section-head">
+          <p class="eyebrow">Signature Collection</p>
+          <h2>Crafted Menus That Set The Tone</h2>
+        </div>
+
+        <section class="menu-grid">
+          {% for item in items %}
+          <article class="menu-card">
+            <div class="menu-meta">Chef's Selection</div>
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.description }}</p>
+            <span class="price">{{ item.price }}</span>
+          </article>
+          {% endfor %}
+        </section>
       </section>
     </main>
   </body>
