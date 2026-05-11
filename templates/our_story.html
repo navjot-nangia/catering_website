@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Story | Village Catering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <header class="site-header">
+        <div class="brand">Village Catering</div>
+        <label for="menu-toggle" class="hamburger">☰</label>
+    </header>
+    <nav class="side-menu">
+        <label for="menu-toggle" class="close-menu">✕</label>
+        <a href="/">Home</a>
+        <a href="/our-story" class="active">Our Story</a>
+        <a href="/#menu">Menu</a>
+        <a href="/#catering">Catering</a>
+        <a href="/#contact">Contact Us</a>
+        <a href="/#contact" class="order-btn">Order Now</a>
+    </nav>
+    <main>
+        <section class="hero-panel story-hero">
+            <div class="hero-overlay">
+                <p>Our Story</p>
+                <h1>Food Made for Gatherings</h1>
+                <a href="/#menu" class="cta">View Catering Menu</a>
+            </div>
+        </section>
+        <section class="content-wrap story-content">
+            <h2>How Village Catering Began</h2>
+            <p class="story-lead">Village Catering started with one family meal, one borrowed smoker, and a simple idea: good food should make people feel at home, even when the table is somewhere new.</p>
+            <p>What began as weekend plates for friends slowly turned into birthdays, office lunches, graduations, and neighborhood celebrations. Every event taught us something useful: keep the food generous, keep the service calm, and make sure every guest leaves with a favorite bite.</p>
+            <p>Today, Village Catering brings together smoky comfort food, bright sides, breakfast favorites, desserts, drinks, and made-to-order menus for all kinds of gatherings. We are proud to serve food that feels familiar, fresh, and made with care.</p>
+            <p>This story is just a placeholder for now. You can swap in your real history, your family background, or the reason you started catering whenever you are ready.</p>
+            <div class="story-actions">
+                <a href="/" class="cta light">Back Home</a>
+                <a href="/#contact" class="cta">Contact Us</a>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">velvettablecatering.com</footer>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+
+        document.querySelectorAll(".side-menu a").forEach((link) => {
+            link.addEventListener("click", () => {
+                document.querySelectorAll(".side-menu a").forEach((navLink) => navLink.classList.remove("active"));
+                link.classList.add("active");
+                menuToggle.checked = false;
+            });
+        });
+    </script>
+</body>
+</html>

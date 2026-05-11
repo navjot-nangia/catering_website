@@ -44,3 +44,12 @@ async def home(request: Request) -> HTMLResponse:
         name="index.html",
         context={"items": items},
     )
+
+
+@app.get("/our-story", response_class=HTMLResponse)
+async def our_story(request: Request) -> HTMLResponse:
+    return templates.TemplateResponse(
+        request=request,
+        name="our_story.html",
+        context={},
+    )
